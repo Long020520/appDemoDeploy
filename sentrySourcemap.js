@@ -1,7 +1,7 @@
 const SentryCli = require("@sentry/cli");
 
 async function createReleaseAndUpload() {
-  const release = "react-trading@2.3.12";
+  const release = "react-trading@2.3.13";
   if (!release) {
     console.warn("REACT_APP_SENTRY_RELEASE is not set");
 
@@ -16,7 +16,7 @@ async function createReleaseAndUpload() {
 
     console.log("Uploading source maps");
     await cli.releases.uploadSourceMaps(release, {
-      include: ["."],
+      include: ["./build"],
       rewrite: false,
     });
 

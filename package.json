@@ -2,6 +2,7 @@
   "name": "appdemodeploy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Long020520.github.io/appDemoDeploy/",
   "dependencies": {
     "@sentry/cli": "^2.2.0",
     "@sentry/react": "^7.3.0",
@@ -11,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.21.3",
     "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-email-editor": "^1.6.0",
@@ -25,6 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "release": "(export REACT_APP_SENTRY_RELEASE=$(git rev-parse --short HEAD); react-scripts build && node sentrySourcemap.js)"
   },
   "eslintConfig": {
