@@ -1,0 +1,138 @@
+.wrapper__app {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  // border: 1px solid blue;
+  .header__tour {
+    width: 100%;
+    height: 65px;
+    // background-color: aquamarine;
+    box-shadow: 0px 2px 2px rgba(77, 18, 18, 0.12);
+    input {
+      width: 100%;
+      height: 100%;
+      border: none;
+      font-size: 30px;
+      outline: none;
+      padding-left: 60px;
+    }
+  }
+  .tour__content {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid green;
+    .sidebar {
+      width: 15%;
+      height: 100vh;
+      // border: 1px solid rebeccapurple;
+      .category {
+        margin-left: 20px;
+      }
+    }
+    .flex-category {
+      display: flex;
+      .places {
+        margin: 10px 20px;
+        margin-left: 40px;
+      }
+      .dishes {
+        margin: 10px 20px;
+        border-radius: 10px;
+        color: #ccc;
+      }
+    }
+    .cuisine {
+      margin-left: 20px;
+    }
+    .american__flex {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 10px;
+    }
+    .chinese__flex {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 10px;
+    }
+    .italian__flex {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 10px;
+    }
+    .price-range {
+      margin-left: 20px;
+    }
+    .star__rating h2 {
+      margin-left: 20px;
+    }
+    .all-start {
+    }
+    .home__page {
+      width: 85%;
+      margin: 0px 20px;
+      // border: 1px solid red;
+      .card__list-detail {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        .image__tour {
+          width: 100%;
+          height: 60%;
+          border-radius: 10px;
+          // border: 1px solid green;
+          img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+          }
+        }
+        .flex__rating {
+          display: flex;
+          justify-content: space-between;
+          margin: 5px 10px;
+          .title {
+            font-size: 16px;
+          }
+          .button-rating {
+            padding: 5px 5px;
+            background-color: rgb(72, 0, 255);
+            border-radius: 10px;
+            border: none;
+            color: #fff;
+          }
+        }
+        .flex__price {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .servicetime {
+            display: flex;
+            flex-direction: row;
+            b {
+              font-size: 12px;
+              padding-left: 10px;
+            }
+            p {
+              font-size: 12px;
+              color: #ccc;
+              margin: 0;
+              padding: 0 10px;
+            }
+          }
+          .price {
+            font-size: 12px;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.wrapper__content {
+  display: flex;
+  flex-direction: column;
+  // border: 1px solid purple;
+  overflow: hidden;
+}
