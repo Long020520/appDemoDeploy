@@ -177,7 +177,13 @@ function TourApp() {
       <div className="tour__content">
         <div className="sidebar">
           <div className="category">
-            <h2>Category</h2>
+            <h2
+              onClick={() => {
+                throw new Error("loi ne");
+              }}
+            >
+              Category
+            </h2>
           </div>
           <Radio.Group className="radius" defaultValue="a" buttonStyle="solid">
             <div className="flex-category">

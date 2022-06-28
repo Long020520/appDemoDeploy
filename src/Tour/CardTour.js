@@ -5,7 +5,7 @@ function CardTour(props) {
   return (
     <div className="card__list-detail">
       <div className="image__tour">
-        <div>{data.category}</div>
+        <div>{data.categoryy}</div>
         <div>{data.cuisine}</div>
         <img
           src={
